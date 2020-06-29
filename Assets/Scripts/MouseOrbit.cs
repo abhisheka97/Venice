@@ -15,6 +15,10 @@ public class MouseOrbit : MonoBehaviour
 	private float x = 0.0f;
 	private float y = 0.0f;
 
+	public  float minFov = 15f;
+	public float  maxFov = 90f;
+	public float sensitivity = 30f;
+
 	private void Start()
 	{
 		var angles = transform.eulerAngles;
@@ -25,6 +29,13 @@ public class MouseOrbit : MonoBehaviour
 		if (GetComponent<Rigidbody>())
 			GetComponent<Rigidbody>().freezeRotation = true;
 	}
+
+	void Update () {
+	   float fov = Camera.main.fieldOfView;
+	   fov = fov - Input.GetAxis("Mouse ScrollWheel") * sensitivity;
+	   fov = Mathf.Clamp(fov, minFov, maxFov);
+	   Camera.main.fieldOfView = fov;
+	 }
 
 	private void LateUpdate()
 	{
