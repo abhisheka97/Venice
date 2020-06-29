@@ -416,10 +416,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54e534ee00facaa49be465f99a2f1425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vcam1: {fileID: 0}
-  vcam2: {fileID: 0}
-  vcam3: {fileID: 0}
-  vcam4: {fileID: 0}
+  vcam1: {fileID: 1252680744}
+  vcam2: {fileID: 465091297}
+  vcam3: {fileID: 1447782755}
+  vcam4: {fileID: 1581920046}
+  mcam: {fileID: 2044801619}
+  sphere2: {fileID: 0}
 --- !u!65 &253193413
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -683,7 +685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &910494200
 Transform:
   m_ObjectHideFlags: 0
@@ -774,6 +776,8 @@ MonoBehaviour:
   vcam2: {fileID: 465091297}
   vcam3: {fileID: 1447782755}
   vcam4: {fileID: 1581920046}
+  mcam: {fileID: 2044801619}
+  sphere2: {fileID: 910494199}
 --- !u!65 &910494205
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -921,6 +925,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 25.303001, y: 13.394001, z: 0}
+--- !u!4 &1510894954 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a291bcb571422158ab10b1af3184c66b,
+    type: 3}
+  m_PrefabInstance: {fileID: 864853188}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1569377376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,10 +1216,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2f63c7bc6f8b5d4f95e865001cac9e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vcam1: {fileID: 0}
-  vcam2: {fileID: 0}
-  vcam3: {fileID: 0}
-  vcam4: {fileID: 0}
+  vcam1: {fileID: 1252680744}
+  vcam2: {fileID: 465091297}
+  vcam3: {fileID: 1447782755}
+  vcam4: {fileID: 1581920046}
+  mcam: {fileID: 2044801619}
+  sphere1: {fileID: 0}
 --- !u!102 &1625271062
 TextMesh:
   serializedVersion: 3
@@ -1283,7 +1295,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1625271065
 BoxCollider:
@@ -1318,7 +1330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1696911538
 Transform:
   m_ObjectHideFlags: 0
@@ -1409,6 +1421,8 @@ MonoBehaviour:
   vcam2: {fileID: 465091297}
   vcam3: {fileID: 1447782755}
   vcam4: {fileID: 1581920046}
+  mcam: {fileID: 2044801619}
+  sphere1: {fileID: 1696911537}
 --- !u!65 &1696911543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1514,7 +1528,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1735338606
 BoxCollider:
@@ -1549,7 +1563,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1745945528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1566,6 +1580,8 @@ MonoBehaviour:
   vcam2: {fileID: 465091297}
   vcam3: {fileID: 1447782755}
   vcam4: {fileID: 1581920046}
+  mcam: {fileID: 2044801619}
+  sphere3: {fileID: 1745945527}
 --- !u!135 &1745945529
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1653,36 +1669,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1863167117
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1863167119}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1863167119
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863167117}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 21.7, z: -130.33}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2044801617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,8 +1800,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a56d2e368d68b14ea17de4ec4082c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 465091299}
-  distance: 10
+  target: {fileID: 1510894954}
+  distance: 30
   xSpeed: 250
   ySpeed: 120
   yMinLimit: -20
